@@ -1,0 +1,58 @@
+<div class="h-screen w-screen-xl z-10 t-0 l-0  z-10">
+    <div class="background-music h-0 w-0 ">
+        <audio #audioPlayer src="assets/music/timeless.mp3" loop autoplay id="audioMe"></audio>
+        <button (click)="playMusic()">Play Music</button>
+    </div>
+    <section>
+        <span> </span>
+        <span> </span>
+        <span> </span>
+        <span> </span>
+        <span> </span>
+        <span> </span>
+        <span> </span>
+        <span> </span>
+        <span> </span>
+        <span> </span>
+        <span> </span>
+        <span> </span>
+        <span> </span>
+    </section>
+    <div class="ContentWrapper animate-swipeDown bg-customBlack">
+        <div class="TextWrapper min-w-screen-sm z-10">
+            <div class="SmallText  text-customYellow">HI !</div>
+
+            <div class="LargeText flex">
+                LOVE,
+                <p class="text-customYellow md:pl-4 sx:pl-3  sm:pl-3"> HAPPY</p>
+            </div>
+            <div class="LargeText text-customYellow">MONTHSARY</div>
+            <div class="MediumText">LOVELY ANNE MANAAY, FUTURE LPT</div>
+            <div class="ButtonWrapper z-[200]" *ngIf="buttonPlay==true">
+                <button (click)="playMusic()" class="HireButton">PLAY MUSIC
+                </button>
+            </div>
+            <div class="ButtonWrapper" *ngIf="buttonPlay==false">
+                <button (click)="stopPlaying()" class="HireButton ">STOP MUSIC
+                </button>
+            </div>
+        </div>
+        <div class="ImageWrapper min-w-screen-sm sx:col-span-1  sm:col-span-1  z-10">
+            <div class="Image">
+                <img src="assets/images/lovely1.png" id="kmv"
+                    class="inline-block transition-opacity  duration-1000 ease-in-out opacity-100" alt="me"
+                    draggable="false">
+                <img src="assets/images/lovely2.png" id="kmv2"
+                    class="inline-block transition-opacity duration-1000 ease-in-out opacity-0" alt="me"
+                    draggable="false">
+            </div>
+        </div>
+
+        <div class="md:modelWrapper modelWrapper">
+            <div #modelContainer class="max-w-xl  h-full flex  justify-self-center items-center">
+            </div>
+        </div>
+    </div>
+    <app-footer class="max-w-screen-xl xs:px:12 sm:px:12 h-20 pb-40 relative z-10 col-span-2"></app-footer>
+
+</div>
