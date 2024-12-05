@@ -1,6 +1,15 @@
-# Myapp
+# Monthsarry Template
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 18.2.10.
+
+## To Edit Names and greetings
+### Go to Monthsary-Template/src/app/app.component.html
+####Change the firstname, lastname remove ""
+####Change the greetings Happy birthday to intended greetings
+
+## To Edit Pictures
+### Go to Monthsary-Template/public/assets/
+####Go to Images and upload 2 images and rename it as lovely1.png and lovely2.png (note it must be a png file)
 
 ## Development server
 
