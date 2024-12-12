@@ -1,9 +1,9 @@
-<div class="h-screen w-screen-xl z-10 t-0 l-0  z-10">
+<div class="min-h-screen w-full overflow-hidden px-20 flex justify-between items-center">
     <div class="background-music h-0 w-0 ">
-        <audio #audioPlayer src="assets/music/timeless.mp3" loop autoplay id="audioMe"></audio>
+        <audio #audioPlayer src="assets/music/Ataleofus.mp3" loop autoplay id="audioMe"></audio>
         <button (click)="playMusic()">Play Music</button>
     </div>
-    <section>
+    <section class="z-[10000]">
         <span> </span>
         <span> </span>
         <span> </span>
@@ -18,17 +18,16 @@
         <span> </span>
         <span> </span>
     </section>
-    <div class="ContentWrapper animate-swipeDown bg-customBlack">
-        <div class="TextWrapper min-w-screen-sm z-10">
-            <div class="SmallText  text-customYellow">HI !</div>
-
-            <div class="LargeText flex">
-                LOVE,
-                <p class="text-customYellow md:pl-4 sx:pl-3  sm:pl-3"> HAPPY</p>
+    <div class="flex justify-between items-center animate-swipeDown bg-transparent z-[1000]">
+        <div class="flex flex-col justify-center items-center z-10 leading-none">
+            <p class="text-[52px]  text-[#ff4d6d] leading-none">HI!</p>
+            <div class="text-[110px] flex leading-none text-gray-50">
+                BABE,
+                <p class="text-[#ff4d6d]"> HAPPY</p>
             </div>
-            <div class="LargeText text-customYellow">BIRTHDAY</div>
-            <div class="MediumText">"FIRSTNAME" "lASTNAME", "FUTURE ???"</div>
-            <div class="ButtonWrapper z-[200]" *ngIf="buttonPlay==true">
+            <p class="text-[72px] text-[#ff4d6d] leading-none">9 MONTHS OF LOVE</p>
+            <p class="text-[31px] leading-none text-gray-50">"You were a beacon of light in my life."</p>
+            <div class="ButtonWrapper" *ngIf="buttonPlay==true">
                 <button (click)="playMusic()" class="HireButton">PLAY MUSIC
                 </button>
             </div>
@@ -37,22 +36,24 @@
                 </button>
             </div>
         </div>
-        <div class="ImageWrapper min-w-screen-sm sx:col-span-1  sm:col-span-1  z-10">
-            <div class="Image">
-                <img src="assets/images/lovely1.png" id="kmv"
-                    class="inline-block transition-opacity  duration-1000 ease-in-out opacity-100" alt="me"
+        <div class="flex w-full justify-end z-10">
+            <div class="shadow-customYellowCircleShadow shadow-[#f4978e] bg-[#ff4d6d] rounded-full flex size-[25rem]">
+                <img src="assets/images/aj1.png" id="tey1"
+                    class="flex transition-opacity object-contain  duration-1000 ease-in-out opacity-100" alt="me"
                     draggable="false">
-                <img src="assets/images/lovely2.png" id="kmv2"
-                    class="inline-block transition-opacity duration-1000 ease-in-out opacity-0" alt="me"
+                <img src="assets/images/aj2.png" id="tey2"
+                    class="flex transition-opacity object-contain duration-1000 ease-in-out opacity-0" alt="me"
                     draggable="false">
             </div>
         </div>
 
-        <div class="md:modelWrapper modelWrapper">
-            <div #modelContainer class="max-w-xl  h-full flex  justify-self-center items-center">
-            </div>
+    </div>
+
+    <div class="fixed  top-1/2 left-1/2 transform -translate-x-1/2  -translate-y-1/2  flex items-center justify-center bg-transparent">
+        <!-- Spinning Loader -->
+        <div #modelContainer class="w-full h-full flex justify-center items-center">
         </div>
     </div>
-    <app-footer class="max-w-screen-xl xs:px:12 sm:px:12 h-20 pb-40 relative z-10 col-span-2"></app-footer>
+    <app-footer class="hidden max-w-screen-xl xs:px:12 sm:px:12 h-20 pb-40 relative z-10 col-span-2"></app-footer>
 
 </div>

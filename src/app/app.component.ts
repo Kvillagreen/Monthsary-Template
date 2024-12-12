@@ -63,8 +63,8 @@ export class AppComponent implements OnInit, AfterViewInit, OnDestroy {
     this.loadModel();
     this.animate(); // Start the animation loop
 
-    const image1 = document.getElementById('kmv');
-    const image2 = document.getElementById('kmv2');
+    const image1 = document.getElementById('tey1');
+    const image2 = document.getElementById('tey2');
 
     image1?.classList.add('opacity-100');
     image2?.classList.add('hidden');

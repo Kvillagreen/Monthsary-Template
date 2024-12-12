@@ -6,7 +6,7 @@
 }
 
 .Image {
-    @apply shadow-customYellowCircleShadow bg-customYellow rounded-full flex justify-center items-center pt-0 xs:size-40 sm:size-40 md:size-64 lg:size-96
+    @apply  justify-center items-center pt-0 xs:size-40 sm:size-40 md:size-64 lg:size-96
 }
 
 .ContentWrapper {
@@ -30,7 +30,7 @@
 .SmallText {
     @apply
     /*SmallDefaultScreen*/
-    text-customXS1 leading-custom
+    text-customXS1 
     /*MediumScreen*/
     md:text-lg
     /*LargeScreen*/
@@ -40,7 +40,7 @@
 .MediumText {
     @apply
     /*SmallDefaultScreen*/
-    text-customXS3 leading-custom
+    text-customXS3 
     /*MediumScreen*/
     md:text-lg
     /*LargeScreen*/
@@ -50,7 +50,7 @@
 .LargeText {
     @apply
     /*SmallDefaultScreen*/
-    text-customXS2 leading-custom md:text-7xl
+    text-customXS2  md:text-7xl
     /*MediumScreen & LargeScreen*/
     lg:text-8xl
 }
@@ -78,7 +78,7 @@
 .HireButton {
     @apply
     /*SmallDefaultScreen*/
-    md:w-36 md:h-12 md:text-lgButton  w-24 h-10 text-mdButton bg-gradient-to-r from-customYellow via-red-400 to-red-500 text-center rounded-md text-white hover:text-customBlack hover:shadow-customYellowShadow
+    md:w-36 md:h-12 md:text-lgButton  w-24 h-10 text-mdButton bg-gradient-to-r from-[#dd2d4a] via-[#dd2d4a] to-[#f26a8d] text-center rounded-md text-white hover:text-[#f4f0bb] hover:shadow-customYellowShadow
     /*MediumScreen*/
     /*LargeScreen*/
 
@@ -121,8 +121,9 @@
 }
 
 .modelWrapper{
-   @apply col-span-2  max-w-screen-xl relative h-full top-[-350px] left-[-450px]
+   @apply absolute inset-0 w-full z-[0]
 }
+       
 .modelWrapper2{
     @apply col-span-2  max-w-screen-xl flex justify-self-center items-center z-[5] h-0
  }

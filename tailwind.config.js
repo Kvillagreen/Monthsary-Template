@@ -45,7 +45,7 @@
       boxShadow: {
         'bottom': '0 5px 25px -20px rgba(0, 0, 0, 0.3)',
         'customYellowShadow': '0 5px 15px rgba(75, 0, 20, 0.5)',
-        'customYellowCircleShadow': '0 5px 50px rgba(75, 0, 20, 0.7)',
+        'customYellowCircleShadow': '0 3px 50px rgba(75, 0, 20, 0.7)',
         // Custom bottom-only shadow
       },
       padding: {
